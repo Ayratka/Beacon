@@ -1,0 +1,25 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Kotlin
+.kotlin/
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.aar
+*.dex
+*.class
+
+# Native (NDK / C++)
+.cxx/
+.externalNativeBuild/
+obj/
+
+# Generated
+bin/
+gen/
+out/
