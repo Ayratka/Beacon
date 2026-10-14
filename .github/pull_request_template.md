@@ -1,13 +1,18 @@
-<!-- Краткое описание изменений в этом PR -->
+## What
+<!-- Brief description of the changes -->
 
 ## Why
-<!-- Зачем это нужно, какую проблему решает -->
+<!-- Why this is needed, what problem it solves -->
 
 ## How
-<!-- Ключевые технические решения -->
+<!-- Key technical decisions -->
 
+<!--
 ## Trade-offs
-<!-- Что рассматривал, почему выбрал это решение -->
+Uncomment and fill in if this PR involves an architectural choice:
+what alternatives were considered, why this one was picked.
+Remove the section if the choice was obvious.
+-->
 
 ## Checklist
 - [ ] Tests added/updated

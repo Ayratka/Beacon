@@ -1,13 +1,16 @@
 ---
 name: Feature request
-about: Предложить фичу
+about: Suggest a new feature
+title: ''
+labels: enhancement
+assignees: ''
 ---
 
-## Проблема
-<!-- Что болит -->
+## Problem
+<!-- What hurts, what's missing, why it matters -->
 
-## Решение
-<!-- Как это решить -->
+## Solution
+<!-- How to solve it, high-level approach -->
 
 ## Acceptance criteria
 - [ ] ...
