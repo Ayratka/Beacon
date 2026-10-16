@@ -2,18 +2,20 @@ package io.github.ayratka.beacon.remote
 
 import io.github.ayratka.beacon.fetcher.BlockReason
 import io.github.ayratka.beacon.fetcher.FetchResult
+import io.github.ayratka.beacon.remote.HttpClientFactory
+import io.github.ayratka.beacon.remote.KtorJsonFetcher
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
+import io.ktor.http.Headers
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
 import io.ktor.http.headersOf
+import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import java.io.IOException
-import kotlin.test.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertIs
-import kotlin.test.assertTrue
+//import kotlin.test.assertEquals
+//import kotlin.test.assertIs
 
 class KtorJsonFetcherTest {
 
@@ -96,7 +98,7 @@ class KtorJsonFetcherTest {
     private fun fetcherReturning(
         status: HttpStatusCode,
         body: String = "",
-        headers: io.ktor.http.Headers = io.ktor.http.Headers.Empty,
+        headers: Headers = Headers.Empty,
     ) = KtorJsonFetcher(
         HttpClientFactory.create(
             engine = MockEngine { request ->
