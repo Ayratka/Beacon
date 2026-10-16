@@ -14,8 +14,8 @@ import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import java.io.IOException
-//import kotlin.test.assertEquals
-//import kotlin.test.assertIs
+import kotlin.test.assertEquals
+import kotlin.test.assertIs
 
 class KtorJsonFetcherTest {
 
