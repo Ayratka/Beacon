@@ -30,8 +30,8 @@ Room, Hilt, Jetpack Compose, WorkManager.
 
 - [x] Multi-module structure
 - [x] Core domain models
-- [ ] `Fetcher` interface
-- [ ] Ktor JSON fetcher
+- [x] `Fetcher` interface
+- [x] Ktor JSON fetcher
 - [ ] Room persistence
 - [ ] `CheckBeaconUseCase`
 - [ ] Compose UI
