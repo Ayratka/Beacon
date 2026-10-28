@@ -30,9 +30,11 @@ android {
         }
     }
     compileOptions {
+        isCoreLibraryDesugaringEnabled = true
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
 }
 
 dependencies {
@@ -47,10 +49,18 @@ dependencies {
     implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.serialization.json)
     implementation(libs.ktor.client.logging)
+    constraints {
+        // okhttp 5.5.0+ requires compileSdk 37, which AGP 9.0.1 doesn't support
+        implementation(libs.okhttp) {
+            version { strictly(libs.versions.okhttp.get()) }
+        }
+    }
     // Room
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
+
+    coreLibraryDesugaring(libs.desugar.jdk.libs)
 
     // Hilt
     implementation(libs.hilt.android)

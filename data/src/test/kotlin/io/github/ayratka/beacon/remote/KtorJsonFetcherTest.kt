@@ -2,8 +2,6 @@ package io.github.ayratka.beacon.remote
 
 import io.github.ayratka.beacon.fetcher.BlockReason
 import io.github.ayratka.beacon.fetcher.FetchResult
-import io.github.ayratka.beacon.remote.HttpClientFactory
-import io.github.ayratka.beacon.remote.KtorJsonFetcher
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
 import io.ktor.http.Headers
@@ -14,7 +12,6 @@ import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import java.io.IOException
-import kotlin.test.assertEquals
 import kotlin.test.assertIs
 
 class KtorJsonFetcherTest {
